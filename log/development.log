@@ -181,3 +181,62 @@ Migrating to CreateCategories (20200919092139)
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/admin" for ::1 at 2020-09-19 12:24:49 +0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (Duration: 27.8ms | Allocations: 13842)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_head.html.haml (Duration: 312.4ms | Allocations: 82162)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (Duration: 7.8ms | Allocations: 3505)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_navigation.html.haml (Duration: 20.2ms | Allocations: 8946)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (Duration: 6.0ms | Allocations: 3015)
+  Rendering /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml (Duration: 11.1ms | Allocations: 4839)
+Completed 200 OK in 882ms (Views: 397.9ms | ActiveRecord: 6.1ms | Allocations: 212136)
+
+
+Started GET "/admin/post/new?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2020-09-19 12:24:56 +0300
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"post"}
+  Rendering /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (Duration: 9.3ms | Allocations: 1887)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.9ms | Allocations: 195)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (Duration: 11.1ms | Allocations: 1844)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.5ms | Allocations: 145)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (Duration: 0.7ms | Allocations: 231)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (Duration: 0.8ms | Allocations: 231)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/_submit_buttons.html.haml (Duration: 58.5ms | Allocations: 9501)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (Duration: 135.5ms | Allocations: 22175)
+Completed 200 OK in 177ms (Views: 171.6ms | ActiveRecord: 0.0ms | Allocations: 25935)
+
+
+Started GET "/admin/post/export?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2020-09-19 12:25:11 +0300
+Processing by RailsAdmin::MainController#export as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"post"}
+  Rendering /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/export.html.haml within layouts/rails_admin/pjax
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT '' AS str;[0m
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/export.html.haml within layouts/rails_admin/pjax (Duration: 121.9ms | Allocations: 30507)
+Completed 200 OK in 142ms (Views: 139.4ms | ActiveRecord: 0.6ms | Allocations: 34004)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddCategoryIdColumn (20200919092555)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "post" ADD "category_id" integer[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddCategoryIdColumn (20200919092555)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "posts" ADD "category_id" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200919092555"]]
+  [1m[35m (116.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
