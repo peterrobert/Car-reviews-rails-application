@@ -98,3 +98,86 @@ Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9
 Completed 200 OK in 8620ms (Views: 8617.3ms | ActiveRecord: 0.0ms | Allocations: 18345)
 
 
+Started GET "/" for ::1 at 2020-09-19 11:54:32 +0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 199)
+Started GET "/" for ::1 at 2020-09-19 11:55:37 +0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 199)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1867ms (Views: 1857.4ms | ActiveRecord: 0.0ms | Allocations: 293003)
+
+
+Started GET "/admin" for ::1 at 2020-09-19 11:55:47 +0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (Duration: 47.5ms | Allocations: 12715)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_head.html.haml (Duration: 1033.2ms | Allocations: 223079)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (Duration: 64.7ms | Allocations: 3505)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_navigation.html.haml (Duration: 75.7ms | Allocations: 8945)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (Duration: 26.8ms | Allocations: 2656)
+  Rendering /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml (Duration: 11.1ms | Allocations: 4847)
+Completed 200 OK in 2028ms (Views: 1246.7ms | ActiveRecord: 3.7ms | Allocations: 361788)
+
+
+Started GET "/admin/post/new?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2020-09-19 11:55:54 +0300
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"post"}
+  Rendering /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (Duration: 16.1ms | Allocations: 1888)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (Duration: 1.5ms | Allocations: 299)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (Duration: 11.4ms | Allocations: 1844)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_field.html.haml (Duration: 0.3ms | Allocations: 145)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (Duration: 2.3ms | Allocations: 231)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/_form_text.html.haml (Duration: 5.2ms | Allocations: 231)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/_submit_buttons.html.haml (Duration: 25.3ms | Allocations: 9501)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (Duration: 138.5ms | Allocations: 22433)
+Completed 200 OK in 185ms (Views: 147.9ms | ActiveRecord: 0.0ms | Allocations: 31866)
+
+
+Started POST "/admin/post/new" for ::1 at 2020-09-19 11:56:28 +0300
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"authenticity_token"=>"9gIGCSFnjGQX0wu7Osz1tL8qdkcpX3JNn6rYjlVvRXuT/0BlKG4fzyiLfj3tUznnJoioDwXPSUAd127whNnE/Q==", "post"=>{"title"=>"This is a car", "price_tag"=>"100", "description"=>"the car is good", "body_type"=>"the car is good", "exterior_features"=>"the car is good", "interior_features"=>"the car is good"}, "return_to"=>"http://localhost:3000/admin", "_save"=>"", "model_name"=>"post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (2.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "price_tag", "description", "body_type", "exterior_features", "interior_features", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "This is a car"], ["price_tag", 100], ["description", "the car is good"], ["body_type", "the car is good"], ["exterior_features", "the car is good"], ["interior_features", "the car is good"], ["created_at", "2020-09-19 08:56:28.822244"], ["updated_at", "2020-09-19 08:56:28.822244"]]
+  [1m[35m (88.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 110ms (ActiveRecord: 91.5ms | Allocations: 7338)
+
+
+Started GET "/admin" for ::1 at 2020-09-19 11:56:28 +0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (Duration: 5.9ms | Allocations: 1337)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_head.html.haml (Duration: 63.8ms | Allocations: 29292)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (Duration: 2.0ms | Allocations: 287)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_navigation.html.haml (Duration: 3.3ms | Allocations: 497)
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (Duration: 3.1ms | Allocations: 464)
+  Rendering /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/peterrobert/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rails_admin-2.0.2/app/views/layouts/rails_admin/pjax.html.haml (Duration: 2.0ms | Allocations: 555)
+Completed 200 OK in 93ms (Views: 82.1ms | ActiveRecord: 0.8ms | Allocations: 36295)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCategories (20200919092139)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200919092139"]]
+  [1m[35m (138.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
