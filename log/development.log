@@ -3751,3 +3751,249 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 1875ms (Views: 1845.3ms | ActiveRecord: 0.0ms | Allocations: 373633)
 
 
+Started GET "/" for ::1 at 2020-09-23 13:46:04 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 78)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/peterrobert/Desktop/work/Car-reviews-rails-application/public/packs
+[Webpacker] Hash: 3aca13ade98375809746
+Version: webpack 4.44.2
+Time: 4520ms
+Built at: 09/23/2020 1:46:12 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d75c3e14236d41792b87.js    438 KiB  application  [emitted] [immutable]  application
+js/application-d75c3e14236d41792b87.js.map    512 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-d75c3e14236d41792b87.js js/application-d75c3e14236d41792b87.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 5.11 KiB {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 8262ms (Views: 8260.1ms | ActiveRecord: 0.0ms | Allocations: 15472)
+
+
+Started GET "/" for ::1 at 2020-09-23 13:50:00 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 72)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms | Allocations: 7129)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap/bootstrap.
+        on line 17:2 of app/assets/stylesheets/application.scss
+>>  @import 'bootstrap/bootstrap';
+
+   -^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    11: 
+  
+app/assets/stylesheets/application.scss:17
+app/views/layouts/application.html.erb:8
+Started GET "/" for ::1 at 2020-09-23 13:50:33 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 4149)
+
+
+  
+ActionView::Template::Error (Error: Custom property values may not be empty.
+        on line 99:20 of app/assets/stylesheets/application.scss
+>>                  &:first-child(){
+
+   -------------------^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    11: 
+  
+app/assets/stylesheets/application.scss:99
+app/views/layouts/application.html.erb:8
+Started GET "/" for ::1 at 2020-09-23 13:55:22 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms | Allocations: 8453)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap/bootstrap.
+        on line 18:2 of app/assets/stylesheets/application.scss
+>>  @import 'bootstrap/bootstrap';
+
+   -^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    11: 
+  
+app/assets/stylesheets/application.scss:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for ::1 at 2020-09-23 13:55:50 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 10172)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap.
+        on line 18:2 of app/assets/stylesheets/application.scss
+>>  @import 'bootstrap';
+
+   -^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    11: 
+  
+app/assets/stylesheets/application.scss:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for ::1 at 2020-09-23 13:56:04 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 5)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 8685)
+
+
+  
+ActionView::Template::Error (Error: Custom property values may not be empty.
+        on line 99:20 of app/assets/stylesheets/application.scss
+>>                  &:first-child(){
+
+   -------------------^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    11: 
+  
+app/assets/stylesheets/application.scss:99
+app/views/layouts/application.html.erb:8
+Started GET "/" for ::1 at 2020-09-23 14:00:19 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms | Allocations: 8282)
+
+
+  
+ActionView::Template::Error (Error: Custom property values may not be empty.
+        on line 1772:20 of app/assets/stylesheets/application.scss
+>>                  &:first-child(){
+
+   -------------------^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    11: 
+  
+app/assets/stylesheets/application.scss:1772
+app/views/layouts/application.html.erb:8
+Started GET "/" for ::1 at 2020-09-23 14:01:39 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/peterrobert/Desktop/work/Car-reviews-rails-application/config/webpack/environment.js:5
+const { environment } = require('@rails/webpacker')
+        ^
+
+SyntaxError: Identifier 'environment' has already been declared
+    at new Script (vm.js:83:7)
+    at NativeCompileCache._moduleCompile (/home/peterrobert/Desktop/work/Car-reviews-rails-application/node_modules/v8-compile-cache/v8-compile-cache.js:242:18)
+    at Module._compile (/home/peterrobert/Desktop/work/Car-reviews-rails-application/node_modules/v8-compile-cache/v8-compile-cache.js:186:36)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/peterrobert/Desktop/work/Car-reviews-rails-application/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/home/peterrobert/Desktop/work/Car-reviews-rails-application/config/webpack/development.js:3:21)
+    at Module._compile (/home/peterrobert/Desktop/work/Car-reviews-rails-application/node_modules/v8-compile-cache/v8-compile-cache.js:194:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/peterrobert/Desktop/work/Car-reviews-rails-application/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at WEBPACK_OPTIONS (/home/peterrobert/Desktop/work/Car-reviews-rails-application/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/peterrobert/Desktop/work/Car-reviews-rails-application/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/peterrobert/Desktop/work/Car-reviews-rails-application/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/peterrobert/Desktop/work/Car-reviews-rails-application/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/peterrobert/Desktop/work/Car-reviews-rails-application/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/peterrobert/Desktop/work/Car-reviews-rails-application/node_modules/yargs/yargs.js:576:18)
+    at /home/peterrobert/Desktop/work/Car-reviews-rails-application/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/peterrobert/Desktop/work/Car-reviews-rails-application/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+
+Completed 200 OK in 2748ms (Views: 2747.0ms | ActiveRecord: 0.0ms | Allocations: 40722)
+
+
+Started GET "/" for ::1 at 2020-09-23 14:02:38 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 8147)
+
+
+  
+ActionView::Template::Error (Error: Custom property values may not be empty.
+        on line 99:7 of app/assets/stylesheets/application.scss
+>> 				&:first-child(){
+
+   ------^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    11: 
+  
+app/assets/stylesheets/application.scss:99
+app/views/layouts/application.html.erb:8
+Started GET "/" for ::1 at 2020-09-23 14:04:39 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 575ms (Views: 573.3ms | ActiveRecord: 0.0ms | Allocations: 59135)
+
+
