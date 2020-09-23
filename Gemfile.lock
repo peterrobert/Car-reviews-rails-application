@@ -62,6 +62,8 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    animate-rails (1.0.10)
+      rails
     bindex (0.8.1)
     bootsnap (1.4.8)
       msgpack (~> 1.0)
@@ -241,6 +243,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  animate-rails
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)

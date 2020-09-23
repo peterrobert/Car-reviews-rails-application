@@ -4,5 +4,5 @@ Rails.application.routes.draw do
 
   resources :post
 
-  root "posts#index"
+  root "static_pages#home"
 end

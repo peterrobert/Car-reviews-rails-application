@@ -5,6 +5,9 @@
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  
+  # Store uploaded files on the local file system in a temporary directory.
+  config.active_storage.service = :test
 
   config.cache_classes = false
   config.action_view.cache_template_loading = true
