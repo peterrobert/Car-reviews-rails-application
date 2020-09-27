@@ -24,39 +24,43 @@
   </a>
 </div>
 <%# latest review section %>
-<section class="latest_reviews container-fluid bars">
+<section class="latest_reviews container bars">
   <h1>latest reviews</h1>
   <div class="title-bar"></div>
   <div class="container latest-section">
     <div class="row">
       <%  @other_posts.each do |post| %>
-      <div class="col-md-4 latest-containers">
-        <div class="card">
-          <%= image_tag (post.avatar) , :class => 'card-img-top'%>
-          <div class="card-body">
-            <h5 class="card-title"><%= post.title%></h5>
-            <p class="card-text"><%= post.description%></p>
-           
-
-            <div class="read-more"><a href="#" class="button">Read More</a></div>
+        <div class="col-md-4 latest-containers">
+          <div class="card">
+            <%= image_tag (post.avatar) , :class => 'card-img-top'%>
+            <div class="card-body">
+              <h5 class="card-title"><%= post.title%></h5>
+              <p class="card-text"><%= post.description%></p>
+              <div class="read-more"><a href="#" class="button">Read More</a></div>
+            </div>
           </div>
         </div>
-      </div>
-       <% end %>
+      <% end %>
     </div>
   </div>
 </section>
-
 <%# category sections %>
-
-<section class="latest-category container-fluid bars">
- <h1>categories</h1>
+<section class="latest-category container bars">
+  <h1>categories</h1>
   <div class="title-bar"></div>
-  <div class="container">
+  <div class="container latest-section">
     <div class="row">
-      <%  @other_posts.each do |post| %>
-     
-       <% end %>
+      <% @category.each do |post| %>
+        <div class="col-md-4 latest-containers">
+          <div class="card">
+            <%= image_tag (post.avatar) , :class => 'card-img-top'%>
+            <div class="card-body">
+              <h5 class="card-title"><%= post.title%></h5>
+              <div class="read-more"><a href="#" class="button">show posts</a></div>
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </section>

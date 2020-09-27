@@ -82,6 +82,7 @@
     margin-top: 40px;
     text-align: left;
     font-family: 'Bebas Neue', cursive;
+    font-size: 2.2rem;
 }
 
 .latest-section {
@@ -135,5 +136,11 @@
   .latest-containers{
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  .image_category img{
+    height: 200px;
+    max-height: 200px;
+    min-height: 200px
   }
  
