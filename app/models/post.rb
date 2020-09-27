@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
     belongs_to :category
 
-    has_many_attached :images
+    has_one_attached :avatar
 end
