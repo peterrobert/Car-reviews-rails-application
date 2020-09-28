@@ -6,13 +6,17 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <%= image_tag (@first_posts.avatar) , :class => 'd-block w-100 header_carl_image'%>
+    
+        <%= image_tag (@first_posts.avatar) , :class => 'd-block w-100 header_carl_image'%>
+     
     </div>
-    <%  @other_posts.each do |post| %>
-      <div class="carousel-item">
-        <%= image_tag (post.avatar) , :class => 'd-block w-100 header_carl_image'%>
-      </div>
-    <% end %>
+   
+      <%  @other_posts.each do |post| %>
+        <div class="carousel-item">
+          <%= image_tag (post.avatar) , :class => 'd-block w-100 header_carl_image'%>
+        </div>
+      <% end %>
+
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -29,14 +33,14 @@
   <div class="title-bar"></div>
   <div class="container latest-section">
     <div class="row">
-      <%  @other_posts.each do |post| %>
+      <%  @other_posts.each do |p| %>
         <div class="col-md-4 latest-containers">
           <div class="card">
-            <%= image_tag (post.avatar) , :class => 'card-img-top'%>
+            <%= image_tag (p.avatar) , :class => 'card-img-top'%>
             <div class="card-body">
-              <h5 class="card-title"><%= post.title%></h5>
-              <p class="card-text"><%= post.description%></p>
-              <div class="read-more"><a href="#" class="button">Read More</a></div>
+              <h5 class="card-title"><%= p.title%></h5>
+              <p class="card-text"><%= p.description%></p>
+              <div class="read-more"> <%= link_to "read more", post_path(p) , :class => "button"%></div>
             </div>
           </div>
         </div>
@@ -63,4 +67,3 @@
     </div>
   </div>
 </section>
-
