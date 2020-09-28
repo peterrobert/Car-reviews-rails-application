@@ -50,13 +50,12 @@
   <div class="title-bar"></div>
   <div class="container latest-section">
     <div class="row">
-      <% @category.each do |post| %>
-        <div class="col-md-4 latest-containers">
+      <% @category.each do |category| %>
+        <div class="col-md-3 category-img">
           <div class="card">
-            <%= image_tag (post.avatar) , :class => 'card-img-top'%>
+            <%= image_tag (category.avatar) , :class => 'card-img-top'%>
             <div class="card-body">
-              <h5 class="card-title"><%= post.title%></h5>
-              <div class="read-more"><a href="#" class="button">show posts</a></div>
+              <p class="card-text"><%= category.name %></p>
             </div>
           </div>
         </div>
@@ -64,3 +63,4 @@
     </div>
   </div>
 </section>
+
