@@ -4,19 +4,60 @@
 <section class="post_id">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <%= image_tag (@post.avatar) , :class => 'd-block w-100 header_carl_image'%>
-          </div>
-          <%  @post_avators.images.each do |post| %>
-            <div class="carousel-item">
-              <%= image_tag (post) , :class => 'd-block w-100 header_carl_image'%>
+      <div class="col-md-6 img-caurosel-container">
+        <div id="carouselExampleIndicatorw carl" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicatorw" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicatorw" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicatorw" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <%= image_tag ( @post.avatar) , :class => 'd-block w-100 header_carl_image'%>
             </div>
-          <% end %>
+            <% @post_avators.images.each do |post| %>
+              <div class="carousel-item">
+                <%= image_tag (post) , :class => 'd-block w-100 header_carl_image'%>
+              </div>
+            <% end %>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicatorw" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicatorw" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 details">
+        <h2><%= @post.title%></h2>
+        <div class="more-details">
+          <ul>
+           <li>  <span>category:</span><span><%= @post.category.name %></span> </li>
+            <li>  <span>price:</span><span><%= @post.price_tag %></span> </li>
+            <li>  <span>body type:</span><span><%= @post.body_type %></span> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="more-information">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <h2>Description</h2>
+        <p><%= @post.description %></p>
+
+        <h2>Exterior features</h2>
+        <p><%= @post.exterior_features %></p>
+
+        <h2>Interior features</h2>
+        <p><%= @post.interior_features %></p>
+
+
+        </div>
       </div>
     </div>
   </div>

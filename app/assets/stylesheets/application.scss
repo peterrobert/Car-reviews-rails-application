@@ -169,6 +169,53 @@ nav li a{
       margin-bottom: 15px;
   }
 
+  .img-caurosel-container{
+      margin-top: 120px;
+      padding-bottom: 40px;
+      z-index: 10000 !important;
+  }
+
+  .img-caurosel-container img{
+      border-radius: 10px;
+      max-height: 400px;
+      min-width: 400px;
+  }
+
+  .details h2{
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 34px;
+    text-align: center;
+  }
+
+  ul li span{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .details ul{
+      padding-top: 10px;
+  }
+
+  .more-details{
+      margin-top: 30px;
+  }
+  .more-details ul li{
+    padding: 10px;
+  }
+
+  .more-information h2{
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+  
+  .more-information p{
+    font-family: 'Montserrat', sans-serif;
+   
+
+  }
 // ==== FOOTER SECTION
 
 
