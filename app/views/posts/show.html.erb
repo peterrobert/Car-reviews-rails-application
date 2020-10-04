@@ -15,10 +15,14 @@
             <div class="carousel-item active">
               <%= image_tag ( @post.avatar) , :class => 'd-block w-100 header_carl_image'%>
             </div>
-            <% @post_avators.images.each do |post| %>
-              <div class="carousel-item">
-                <%= image_tag (post) , :class => 'd-block w-100 header_carl_image'%>
-              </div>
+            <% @post_avators.each do |post| %>
+              <% if post.images.attached? %>
+                <% post.images.each do |pst| %>
+                  <div class="carousel-item">
+                    <%= image_tag (pst) , :class => 'd-block w-100 header_carl_image'%>
+                  </div>
+                <% end %>
+              <% end %>
             <% end %>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicatorw" role="button" data-slide="prev">
@@ -35,7 +39,7 @@
         <h2><%= @post.title%></h2>
         <div class="more-details">
           <ul>
-           <li>  <span>category:</span><span><%= @post.category.name %></span> </li>
+            <li>  <span>category:</span><span><%= @post.category.name %></span> </li>
             <li>  <span>price:</span><span><%= @post.price_tag %></span> </li>
             <li>  <span>body type:</span><span><%= @post.body_type %></span> </li>
           </ul>
@@ -47,16 +51,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-        <h2>Description</h2>
-        <p><%= @post.description %></p>
-
-        <h2>Exterior features</h2>
-        <p><%= @post.exterior_features %></p>
-
-        <h2>Interior features</h2>
-        <p><%= @post.interior_features %></p>
-
-
+          <h2>Description</h2>
+          <p><%= @post.description %></p>
+          <h2>Exterior features</h2>
+          <p><%= @post.exterior_features %></p>
+          <h2>Interior features</h2>
+          <p><%= @post.interior_features %></p>
         </div>
       </div>
     </div>
