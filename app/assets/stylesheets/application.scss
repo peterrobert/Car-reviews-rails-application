@@ -35,11 +35,25 @@
     padding-bottom: 10px;
 }
 
+.carousel {
+  margin-top: -82px;
+  z-index: -1;
+}
+
+nav li a{
+    color: #fff !important;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+}
 // MY STYLES
 
 .header_carl_image {
     max-height: 100vh;
-    filter: brightness(0.9);
+    filter: brightness(0.7);
 }
 
 .carousel-caption h5 {
@@ -156,6 +170,7 @@
   }
 
 // ==== FOOTER SECTION
+
 
 .footer-section img{
     width: 100%;

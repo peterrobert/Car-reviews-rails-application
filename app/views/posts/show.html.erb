@@ -1,0 +1,23 @@
+<div class="carousel">
+  <%= image_tag (@post.avatar) , :class => 'd-block w-100 header_carl_image'%>
+</div>
+<section class="post_id">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <%= image_tag (@post.avatar) , :class => 'd-block w-100 header_carl_image'%>
+          </div>
+          <%  @post_avators.images.each do |post| %>
+            <div class="carousel-item">
+              <%= image_tag (post) , :class => 'd-block w-100 header_carl_image'%>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-md-6">
+      </div>
+    </div>
+  </div>
+</section>
