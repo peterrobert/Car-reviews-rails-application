@@ -116,8 +116,8 @@ nav li a {
   margin-top: -5px;
   background-color: red;
   width: 70px;
-  height: 10px;
-  border-radius: 30px;
+  height: 4px;
+  border-radius: 50px;
 }
 
 .card-title {
@@ -238,6 +238,16 @@ ul li span {
   font-size: 40px;
   letter-spacing: 8px;
 }
+
+.latest-category .card{
+  min-height: 288px;
+  box-shadow: 3px 6px 5px grey;
+}
+
+.latest-containers .card{
+  box-shadow: 3px 6px 5px grey;
+}
+
 
 // ==== FOOTER SECTION
 .footer-section {
