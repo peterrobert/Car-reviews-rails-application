@@ -25,14 +25,14 @@
  */
 
 .bar {
-    background-color: red;
-    width: 100%;
-    height: 3px;
+  background-color: red;
+  width: 100%;
+  height: 3px;
 }
 
 .nav-bar-container {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .carousel {
@@ -40,185 +40,208 @@
   z-index: -1;
 }
 
-nav li a{
-    color: #fff !important;
-    font-family: 'Exo 2', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+nav li a {
+  color: #fff !important;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 
 }
+
+.categories-header {
+  background-color: #2b2929;
+  width: 100%;
+  height: 240px;
+  margin-top: -82px;
+  z-index: -1;
+}
+
 // MY STYLES
 
 .header_carl_image {
-    max-height: 90vh;
-    filter: brightness(0.7);
+  max-height: 90vh;
+  filter: brightness(0.7);
 }
 
 .carousel-caption h5 {
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 700;
-    color: #fff;
-    line-height: 1;
-    font-family: "Poppins", Arial, sans-serif;
-    text-shadow: 0px 3px 25px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  font-family: "Poppins", Arial, sans-serif;
+  text-shadow: 0px 3px 25px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-caption {
 
-    bottom: 50% !important;
+  bottom: 50% !important;
 }
 
 .carousel-caption p {
 
-    font-size: 16px;
-    text-transform: lowercase;
-    letter-spacing: 2px;
-    font-family: "Poppins", Arial, sans-serif;
-    font-weight: 600;
-    color: #f79f24;
-    position: relative;
-    letter-spacing: 4px;
+  font-size: 16px;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
+  color: #f79f24;
+  position: relative;
+  letter-spacing: 4px;
 
 }
 
 .carousel-caption .btn {
-    background: #f79f24;
-    border: 1px solid #f79f24;
-    color: #fff;
+  background: #f79f24;
+  border: 1px solid #f79f24;
+  color: #fff;
 }
 
 // latest reviews
 
 .bars h1 {
-    margin-top: 40px;
-    text-align: left;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2.2rem;
+  margin-top: 40px;
+  text-align: left;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.2rem;
 }
 
 .latest-section {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .title-bar {
-    margin-top: -5px;
-    background-color: red;
-    width: 70px;
-    height: 10px;
-    border-radius: 30px;
+  margin-top: -5px;
+  background-color: red;
+  width: 70px;
+  height: 10px;
+  border-radius: 30px;
 }
 
-.card-title{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
+.card-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
 }
 
-.card-text{
-    font-family: 'Montserrat', sans-serif;
+.card-text {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.card{
-    max-height: 400px;
-    position: relative;
-    overflow: hidden;
-    min-height: 400px;
+.card {
+  max-height: 400px;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
 }
 
-.card .read-more { 
-    position: absolute; 
-    bottom: 0; 
-    left: 0;
-    width: 100%; 
-    text-align: center; 
-    margin: 0; padding: 30px 0; 
-   
-    text-transform: uppercase;
-      
-    /* "transparent" only works here because == rgba(0,0,0,0) */
-    background-image: linear-gradient(to bottom, #eee , #eee);
-  }
+.card .read-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
 
-  .card .read-more a{
-    color: #000;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
-  }
+  text-transform: uppercase;
 
-  .latest-containers{
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+  /* "transparent" only works here because == rgba(0,0,0,0) */
+  background-image: linear-gradient(to bottom, #eee, #eee);
+}
 
-  .image_category img{
-    height: 200px;
-    max-height: 200px;
-    min-height: 200px
-  }
+.card .read-more a {
+  color: #000;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+}
 
-  .category-img img{
-    height: 220px;
-    padding: 20px;
-  }
+.latest-containers {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-  .category-img .card{
-    background-color: #eee;
-      border: unset;
-      margin-bottom: 15px;
-  }
+.image_category img {
+  height: 200px;
+  max-height: 200px;
+  min-height: 200px
+}
 
-  .img-caurosel-container{
-      margin-top: 120px;
-      padding-bottom: 40px;
-      z-index: 10000 !important;
-  }
+.category-img img {
+  height: 220px;
+  padding: 20px;
+}
 
-  .img-caurosel-container img{
-      border-radius: 10px;
-      max-height: 400px;
-      min-width: 400px;
-  }
+.category-img .card {
+  background-color: #eee;
+  border: unset;
+  margin-bottom: 15px;
+}
 
-  .details h2{
-    font-family: 'Bebas Neue', cursive;
-    margin-top: 34px;
-    text-align: center;
-  }
+.img-caurosel-container {
+  margin-top: 120px;
+  padding-bottom: 40px;
+  z-index: 10000 !important;
+}
 
-  ul li span{
-    font-family: 'Montserrat', sans-serif;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: 800;
-  }
+.img-caurosel-container img {
+  border-radius: 10px;
+  max-height: 400px;
+  min-width: 400px;
+}
 
-  .details ul{
-      padding-top: 10px;
-  }
+.details h2 {
+  font-family: 'Bebas Neue', cursive;
+  margin-top: 34px;
+  text-align: center;
+}
 
-  .more-details{
-      margin-top: 30px;
-  }
-  .more-details ul li{
-    padding: 10px;
-  }
+ul li span {
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
 
-  .more-information h2{
-    font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
-    padding-top: 20px;
-  }
-  
-  .more-information p{
-    font-family: 'Montserrat', sans-serif;
-   
+.details ul {
+  padding-top: 10px;
+}
 
-  }
+.more-details {
+  margin-top: 30px;
+}
+
+.more-details ul li {
+  padding: 10px;
+}
+
+.more-information h2 {
+  font-family: 'Bebas Neue', cursive;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.more-information p {
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.categories-header h2{
+  font-family: 'Bebas Neue', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: 120px;
+  font-size: 40px;
+  letter-spacing: 8px;
+}
+
 // ==== FOOTER SECTION
-.footer-section{
-    margin-top: 50px;
-    background: #2b2929;
-    height: 200px;
+.footer-section {
+  margin-top: 50px;
+  background: #2b2929;
+  height: 200px;
 }

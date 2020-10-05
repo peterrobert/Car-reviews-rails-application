@@ -6,17 +6,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-    
-        <%= image_tag (@first_posts.avatar) , :class => 'd-block w-100 header_carl_image'%>
-     
+      <%= image_tag (@first_posts.avatar) , :class => 'd-block w-100 header_carl_image'%>
     </div>
-   
-      <%  @other_posts.each do |post| %>
-        <div class="carousel-item">
-          <%= image_tag (post.avatar) , :class => 'd-block w-100 header_carl_image'%>
-        </div>
-      <% end %>
-
+    <%  @other_posts.each do |post| %>
+      <div class="carousel-item">
+        <%= image_tag (post.avatar) , :class => 'd-block w-100 header_carl_image'%>
+      </div>
+    <% end %>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -56,17 +52,32 @@
     <div class="row">
       <% @category.each do |category| %>
         <div class="col-md-3 category-img">
-          <div class="card">
-            <%= image_tag (category.avatar) , :class => 'card-img-top'%>
-            <div class="card-body">
-              <%= link_to <%= category.name %>,  %>
-              <p class="card-text"></p>
+          <%= link_to category_path(category) do %>
+            <div class="card">
+              <%= image_tag (category.avatar) , :class => 'card-img-top'%>
+              <div class="card-body">
+                <p class="card-text"><%= category.name %></p>
+              </div>
             </div>
-          </div>
+          <% end %>
         </div>
       <% end %>
     </div>
   </div>
 </section>
+<footer class="footer-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+      </div>
+    </div>
+  </div>
 
-<footer class="footer-section"></footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+         
+      </div>
+    </div>
+  </div>
+</footer>

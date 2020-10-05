@@ -1,0 +1,23 @@
+<div class="categories-header">
+
+<h2><%= @category.name %></h2>
+</div>
+
+<section class="latest_reviews container bars">
+  <div class="container latest-section">
+    <div class="row">
+      <% @category_show.each do |p| %>
+        <div class="col-md-4 latest-containers">
+          <div class="card">
+            <%= image_tag (p.avatar) , :class => 'card-img-top'%>
+            <div class="card-body">
+              <h5 class="card-title"><%= p.title%></h5>
+              <p class="card-text"><%= p.description%></p>
+              <div class="read-more"> <%= link_to "read more", post_path(p) , :class => "button"%></div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
