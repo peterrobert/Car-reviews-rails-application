@@ -59,7 +59,8 @@
           <div class="card">
             <%= image_tag (category.avatar) , :class => 'card-img-top'%>
             <div class="card-body">
-              <p class="card-text"><%= category.name %></p>
+              <%= link_to <%= category.name %>,  %>
+              <p class="card-text"></p>
             </div>
           </div>
         </div>
